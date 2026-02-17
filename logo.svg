@@ -1,0 +1,53 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer green ring -->
+  <circle cx="250" cy="250" r="230" fill="white" stroke="#3fae6b" stroke-width="20"/>
+
+  <!-- Soft green glow behind building -->
+  <circle cx="250" cy="250" r="160" fill="#e8f7ee"/>
+
+  <!-- Energy efficiency arcs -->
+  <path d="M120 260
+           C140 150, 360 150, 380 260"
+        fill="none"
+        stroke="#3fae6b"
+        stroke-width="14"
+        stroke-linecap="round"/>
+
+  <path d="M140 300
+           C170 380, 330 380, 360 300"
+        fill="none"
+        stroke="#2e8b57"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <!-- Office building silhouette -->
+  <rect x="180" y="150" width="140" height="220" rx="10" fill="#2e8b57"/>
+
+  <!-- Windows -->
+  <g fill="#ffffff">
+    <rect x="200" y="170" width="30" height="30" rx="4"/>
+    <rect x="240" y="170" width="30" height="30" rx="4"/>
+    <rect x="280" y="170" width="30" height="30" rx="4"/>
+
+    <rect x="200" y="215" width="30" height="30" rx="4"/>
+    <rect x="240" y="215" width="30" height="30" rx="4"/>
+    <rect x="280" y="215" width="30" height="30" rx="4"/>
+
+    <rect x="200" y="260" width="30" height="30" rx="4"/>
+    <rect x="240" y="260" width="30" height="30" rx="4"/>
+    <rect x="280" y="260" width="30" height="30" rx="4"/>
+
+    <rect x="200" y="305" width="30" height="30" rx="4"/>
+    <rect x="240" y="305" width="30" height="30" rx="4"/>
+    <rect x="280" y="305" width="30" height="30" rx="4"/>
+  </g>
+
+  <!-- Leaf for energy efficiency -->
+  <path d="M150 260
+           C110 200, 140 150, 200 160
+           C170 200, 180 240, 150 260Z"
+        fill="#3fae6b"
+        opacity="0.85"/>
+
+</svg>
