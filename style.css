@@ -13,45 +13,148 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
-.navbar .logo {
+.logo-container {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.navbar .logo-text {
   color: white;
   font-size: 1.3rem;
   font-weight: 600;
+  text-decoration: none;
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #A5D6A7;
 }
 
+/* Skyline section */
+.skyline-section {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #E8F5E9, #E3F2FD);
+  position: relative;
+}
+
+.skyline-background {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 /* Page container */
 .container {
   max-width: 900px;
-  margin: 40px auto;
+  margin: -60px auto 40px;
   background: white;
-  padding: 40px;
+  padding: 60px 50px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 10;
 }
 
 /* Headings */
-h1, h2 {
+h1 {
   color: #1B5E20;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+h2 {
+  color: #1B5E20;
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+.intro-text {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #424242;
+  margin: 0 0 40px 0;
+  font-weight: 400;
 }
 
 /* Links */
 a {
   color: #1B5E20;
+  transition: color 0.3s ease;
 }
-
 a:hover {
   color: #4FC3F7;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar .logo-text {
+    font-size: 1.1rem;
+    flex: 1 1 100%;
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    flex: 1 1 100%;
+    order: 3;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .container {
+    margin: -40px 20px 40px;
+    padding: 40px 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p, .intro-text {
+    font-size: 1rem;
+  }
 }
