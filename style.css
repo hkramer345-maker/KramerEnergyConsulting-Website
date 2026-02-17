@@ -1,59 +1,74 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f7f7f7;
+    background: #f4f9f4; /* soft green-tinted white */
     color: #222;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-bottom: 1px solid #ddd;
-    position: relative;
+/* ---------------- HEADER ---------------- */
+
+.topbar {
+    background: linear-gradient(to bottom, #2e8b57, #3fae6b); /* green blend */
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-.skyline {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #005a8d;
+.left-title a {
+    color: white;
+    font-size: 1.4rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
-nav a:hover {
+.right-nav a {
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.right-nav a:hover {
     text-decoration: underline;
 }
 
-.hero {
-    padding: 80px 20px;
+/* ---------------- CENTER LOGO ---------------- */
+
+.logo-section {
     text-align: center;
-    background: #e8f3ff;
+    margin-top: 40px;
 }
 
-.content {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
+.center-logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #3fae6b; /* green ring */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.pub-list li {
-    margin-bottom: 15px;
+/* ---------------- HERO ---------------- */
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: #e8f7ee; /* soft green background */
+    margin-top: 40px;
 }
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+/* ---------------- FOOTER ---------------- */
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #eee;
+    background: #e0e0e0;
     margin-top: 40px;
 }
