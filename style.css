@@ -64,6 +64,18 @@ body {
     margin-bottom: 10px;
 }
 
+/* ---------------- CONTENT ---------------- */
+
+.content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.pub-list li {
+    margin-bottom: 15px;
+}
+
 /* ---------------- FOOTER ---------------- */
 
 footer {
