@@ -122,50 +122,6 @@ body {
 
 .hero p { max-width: 700px; margin: 0 auto; font-size: 1.04rem; color: #cde3c5; }
 
-.vine-outline {
-    max-width: 1080px;
-    margin: 8px auto 2px;
-    padding: 0 8px;
-    display: flex;
-    justify-content: space-between;
-    pointer-events: none;
-}
-
-.vine {
-    width: min(120px, 18vw);
-    height: auto;
-    opacity: 0.78;
-}
-
-.vine path {
-    fill: none;
-    stroke: rgba(167, 211, 141, 0.44);
-    stroke-width: 2.2;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-}
-
-.nature-outline {
-    max-width: 1080px;
-    margin: 18px auto 6px;
-    padding: 0 18px;
-    opacity: 0.82;
-}
-
-.nature-outline svg {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.nature-outline path {
-    fill: none;
-    stroke: rgba(167, 211, 141, 0.48);
-    stroke-width: 2;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-}
-
 .content {
     padding: 40px 20px;
     max-width: 850px;
@@ -215,13 +171,5 @@ footer {
     .right-nav {
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .vine-outline {
-        padding: 0 14px;
-    }
-
-    .vine {
-        width: min(84px, 20vw);
     }
 }
